@@ -7,7 +7,7 @@ class Student
 
   @@all = []
 
-  def initialize name, grade, id
+  def initialize name, grade, id=nil
     @id = id
     @name = name
     @grade = grade
