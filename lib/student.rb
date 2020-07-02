@@ -27,7 +27,7 @@ class Student
 
   def self.drop_table
     sql = <<-SQL
-      DELETE * FROM TABLE WHERE TABLE EXISTS students (
+      DROP TABLE students (
       )
       SQL
     DB[:conn].execute(sql)
